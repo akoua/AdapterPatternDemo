@@ -9,5 +9,8 @@
         <module name="AdapterPatternDemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AdapterPatternDemo" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
