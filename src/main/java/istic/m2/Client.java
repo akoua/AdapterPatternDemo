@@ -2,13 +2,13 @@ package istic.m2;
 
 public class Client {
 
-    private IUtilisateur utilisateur;
+    private IMoney iMoney;
 
-    public void process(OurEntity mag) {
-        System.out.println(utilisateur.getUserInfo(mag));
+    public void process(IMoney iMoney) {
+        iMoney.operation();
     }
 
-    public void setUtilisateur(IUtilisateur iUtilisateur) {
-        this.utilisateur = iUtilisateur;
+    public void setUtilisateur(IMoney iMoney) {
+        this.iMoney = iMoney;
     }
 }
