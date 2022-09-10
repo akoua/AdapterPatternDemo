@@ -4,8 +4,9 @@ package istic.m2;
  * La carte de credit permet de faire office du compte en banque
  */
 public class CreditCard implements IMoney {
-    private IMoney bankAccount;
+    // for security procuration
     private boolean isOwner;
+    private IMoney bankAccount;
 
     public CreditCard(boolean isOwner) {
         this.isOwner = isOwner;
