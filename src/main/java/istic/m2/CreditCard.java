@@ -10,11 +10,12 @@ public class CreditCard implements IMoney {
 
     public CreditCard(boolean isOwner) {
         this.isOwner = isOwner;
-        this.bankAccount = new BankAccount();
+
     }
 
     @Override
     public void operation() {
+        if (null == bankAccount) this.bankAccount = new BankAccount();
         if (isOwner) {
             bankAccount.operation();
         } else {
