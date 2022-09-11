@@ -2,13 +2,14 @@ package istic.m2;
 
 public class Client {
 
-    private IMoney iMoney;
+    private Notifier notifier;
 
-    public void process(IMoney iMoney) {
-        iMoney.operation();
+    public void process(String message) {
+        notifier.send(message);
     }
 
-    public void setUtilisateur(IMoney iMoney) {
-        this.iMoney = iMoney;
+    public void setDecorator(Notifier notifier) {
+        this.notifier = notifier;
     }
+
 }
