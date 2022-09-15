@@ -3,7 +3,7 @@ package istic.m2;
 /**
  * La carte de credit permet de faire office du compte en banque
  */
-public class FacebookDecoratorNotifier extends Decorator {
+public class FacebookDecoratorNotifier extends Decorator implements NewInterface {
 
     public FacebookDecoratorNotifier(Notifier notifier) {
         super(notifier);
@@ -17,4 +17,8 @@ public class FacebookDecoratorNotifier extends Decorator {
         System.out.println("---------------------------------------");
     }
 
+    @Override
+    public void newSend(String message) {
+        System.out.printf(message);
+    }
 }
